@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_action :find_article, only: [:show, :edit, :update, :delete]
+  before_action :find_article, only: [:show, :edit, :update, :destroy]
 
   def new
     @article = Article.new

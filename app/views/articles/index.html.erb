@@ -1,0 +1,5 @@
+<%= link_to "New Article", new_article_path, class: "btn btn-primary" %>
+<% @articles.each do |article| %>
+  <h1> <%= link_to article.title, article_path(article), class: "btn btn-primary" %></h1>
+  <p><%= article.text %></p>
+<% end %>
